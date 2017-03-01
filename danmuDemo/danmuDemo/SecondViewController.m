@@ -28,38 +28,38 @@
     [danmuManager startReceiveDanmu];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
-    btn.frame = CGRectMake(100, 80, 60, 30);
-    [btn setTitle:@"return" forState:UIControlStateNormal];
+    btn.frame = CGRectMake(125, 450, 120, 40);
+    [btn setTitle:@"返回上一页" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
     UIButton *adjustChannelCntBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    adjustChannelCntBtn.frame = CGRectMake(120, 300, 120, 40);
+    adjustChannelCntBtn.frame = CGRectMake(125, 480, 120, 40);
     [adjustChannelCntBtn setTitle:@"改变轨道数" forState:UIControlStateNormal];
     [adjustChannelCntBtn addTarget:self action:@selector(changeChannelCnt) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:adjustChannelCntBtn];
     
     
     UIButton *runBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    runBtn.frame = CGRectMake(60, 400, 120, 40);
+    runBtn.frame = CGRectMake(50, 520, 120, 40);
     [runBtn setTitle:@"继续运行弹幕" forState:UIControlStateNormal];
     [runBtn addTarget:self action:@selector(resumeDanmu) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:runBtn];
     
     UIButton *pauseBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    pauseBtn.frame = CGRectMake(220, 400, 120, 40);
+    pauseBtn.frame = CGRectMake(210, 520, 120, 40);
     [pauseBtn setTitle:@"暂停运行弹幕" forState:UIControlStateNormal];
     [pauseBtn addTarget:self action:@selector(pauseDanmu) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:pauseBtn];
     
     UIButton *stopBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    stopBtn.frame = CGRectMake(120, 500, 120, 40);
+    stopBtn.frame = CGRectMake(120, 560, 120, 40);
     [stopBtn setTitle:@"停止运行弹幕" forState:UIControlStateNormal];
     [stopBtn addTarget:self action:@selector(stopDanmu) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stopBtn];
     
     UIButton *sendBtn = [UIButton buttonWithType:UIButtonTypeSystem];
-    sendBtn.frame = CGRectMake(120, 570, 120, 40);
+    sendBtn.frame = CGRectMake(120, 600, 120, 40);
     [sendBtn setTitle:@"发送弹幕" forState:UIControlStateNormal];
     [sendBtn addTarget:self action:@selector(sendDanmu) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:sendBtn];

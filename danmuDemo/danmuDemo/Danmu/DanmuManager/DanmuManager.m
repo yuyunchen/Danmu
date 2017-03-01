@@ -44,7 +44,7 @@ static DanmuManager *defaultManager = nil;
     
     dispatch_once(&onceToken, ^{
         if (defaultManager == nil) {
-            defaultManager =[super allocWithZone:zone];
+            defaultManager = [super allocWithZone:zone];
         }
     });
     
